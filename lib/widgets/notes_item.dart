@@ -27,7 +27,7 @@ class NotesItem extends StatelessWidget {
               'Build Your career with flutter',
               style: TextStyle(
                 color: Color(0xff8d6c34),
-                fontSize: 20,
+                fontSize: 18,
               ),
             ),
             trailing: IconButton(
