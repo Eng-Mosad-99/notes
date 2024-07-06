@@ -23,7 +23,9 @@ class NotesListView extends StatelessWidget {
             shrinkWrap: true,
             physics: const BouncingScrollPhysics(),
             itemBuilder: (ctx, index) {
-              return const NotesItem();
+              return  NotesItem(
+                noteModel: notesList[index],
+              );
             },
             itemCount: notesList.length,
           ),
