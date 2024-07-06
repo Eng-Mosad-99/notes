@@ -4,15 +4,15 @@ class NotesState {}
 
 final class NotesInitial extends NotesState {}
 
-final class AddNoteLoadingState extends NotesState {}
+final class NotesLoadingState extends NotesState {}
 
-final class AddNoteSuccessfulState extends NotesState {
+final class NotesSuccessfulState extends NotesState {
   final List<NoteModel> notes;
 
-  AddNoteSuccessfulState(this.notes);
+  NotesSuccessfulState(this.notes);
 }
 
-final class AddNoteFailureState extends NotesState {
+final class NotesFailureState extends NotesState {
   final String errorMessage;
-  AddNoteFailureState(this.errorMessage);
+  NotesFailureState(this.errorMessage);
 }
